@@ -40,6 +40,17 @@ a {
     background-color:#353A3F;
 }
 
+/*#### Home Styles ####*/
+#home {
+    height: 75vh;
+}
+
+@media (max-width: 365px) {
+    #home {
+        height: 60vh;
+    }
+}
+
 /*#### Project Styles ####*/
 .project-container {
     width: 90%;
