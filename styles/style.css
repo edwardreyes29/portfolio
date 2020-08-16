@@ -22,11 +22,23 @@ a {
     text-decoration: none;
 }
 
+
 /*#### Nav Styles ####*/
+.nav-item .active {
+    text-decoration: underline;
+}
 .nav-item:hover {
     text-decoration: underline;
 }
 
+#main-tab li a {
+    border: 0;
+    background-color: #353A3F;
+}
+#main-tab li a:hover {
+    border: 0;
+    background-color:#353A3F;
+}
 
 /*#### Project Styles ####*/
 .project-container {
