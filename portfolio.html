@@ -37,207 +37,189 @@
                 </nav>
             </header>
             <main role="main">
-                <div class="overflow-wrapper">
-                    <div class="col-6 pl-0">
-                        <div class='portfolio-page-title-container'>
-                            <h1 class='text-light'>Projects</h1>
-                            <p class="mb-4 font-weight-light text-light">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.
-                                Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                        </div>
+                <div class="col-6 pl-0">
+                    <div class='portfolio-page-title-container'>
+                        <h1 class='text-light'>Projects</h1>
+                        <p class="mb-4 font-weight-light text-light">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                            Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="container">
+                            <!-- Projects -->
+                            <div class="project-container text-light">
+                                <div class="project-image-container">
+                                    <img id="project-image-ij" class="img-fluid"
+                                        src="assets/modal-images/project-image-template-light.png"
+                                        style="cursor:pointer;"> <!-- js target -->
+                                    <a class="project-link-MN" href="#" target="_blank">
+                                        <div class="project-image-overlay"></div>
+                                    </a> <!-- js target -->
+
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
+                                    <div class="d-flex justify-content-between">
+                                        <h3 class="project-name-ij mb-2" style="font-size: 1.3rem;"> Project Name </h3>
+                                        <!-- js target -->
+                                        <div class="pr-2" data-toggle="modal" data-target="#project-modal-ij">
+                                            <!-- js target -->
+                                            <img class="img-fluid" src="assets/icons/info-circle-light.svg"
+                                                style="cursor:pointer; width: 18px;">
+                                        </div>
+                                    </div>
+                                    <p id="project-description-MN" class="mb-2 font-weight-light">Lorem ipsum dolor sit
+                                        amet, consectetur
+                                        adipiscing elit.
                                         Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
+                                    <!-- js target -->
                                     <div class="d-flex mb-2">
                                         <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
+                                        <a class="project-link-MN text-reset" href="#" title="project-deployed"
+                                            target="_blank" style="text-decoration: underline;">Deployed Site</a>
+                                        <!-- js target -->
                                     </div>
                                     <div class="d-flex mb-2">
                                         <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
+                                        <a id="project-github-link-MN" class="text-reset" href="#"
+                                            title="project-repository" target="_blank"
+                                            style="text-decoration: underline;">GitHub</a> <!-- js target -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
+                    <div class="col-6">
+                        <div class="container">
+                            <!-- Projects -->
+                            <div class="project-container text-light ml-auto">
+                                <div class="project-image-container">
+                                    <img id="project-image-ij" class="img-fluid"
+                                        src="assets/modal-images/project-image-template-light.png"
+                                        style="cursor:pointer;"> <!-- js target -->
+                                    <a class="project-link-MN" href="#" target="_blank">
+                                        <div class="project-image-overlay"></div>
+                                    </a> <!-- js target -->
+
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
+                                    <div class="d-flex justify-content-between">
+                                        <h3 class="project-name-ij mb-2" style="font-size: 1.3rem;"> Project Name </h3>
+                                        <!-- js target -->
+                                        <div class="pr-2" data-toggle="modal" data-target="#project-modal-ij">
+                                            <!-- js target -->
+                                            <img class="img-fluid" src="assets/icons/info-circle-light.svg"
+                                                style="cursor:pointer; width: 18px;">
+                                        </div>
+                                    </div>
+                                    <p id="project-description-MN" class="mb-2 font-weight-light">Lorem ipsum dolor sit
+                                        amet, consectetur
+                                        adipiscing elit.
                                         Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
+                                    <!-- js target -->
                                     <div class="d-flex mb-2">
                                         <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
+                                        <a class="project-link-MN text-reset" href="#" title="project-deployed"
+                                            target="_blank" style="text-decoration: underline;">Deployed Site</a>
+                                        <!-- js target -->
                                     </div>
                                     <div class="d-flex mb-2">
                                         <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
+                                        <a id="project-github-link-MN" class="text-reset" href="#"
+                                            title="project-repository" target="_blank"
+                                            style="text-decoration: underline;">GitHub</a> <!-- js target -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
+                </div>
+                <!-- Modals -->
+                <div class="modal fade" id="project-modal-ij" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- js target -->
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header bg-dark">
+                                <h5 class="project-name-ij" id="exampleModalLabel">Project Name</h5>
+                                <!-- js target -->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" style="color: #ffffff;">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-7">
+                                        <!-- Carousel -->
+                                        <div id="carouselExampleControls" class="carousel slide mb-3"
+                                            data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div id="carousel-image-ijk" class="carousel-item active">
+                                                    <img src="assets/modal-images/project-image-template-light.png"
+                                                        class="d-block w-100" alt="..."> <!-- js target -->
+                                                </div>
+                                                <div id="carousel-image-ijk" class="carousel-item">
+                                                    <img src="assets/modal-images/project-image-template-dark.png"
+                                                        class="d-block w-100" alt="..."> <!-- js target -->
+                                                </div>
+                                                <div id="carousel-image-ijk" class="carousel-item">
+                                                    <img src="assets/modal-images/project-image-template-light.png"
+                                                        class="d-block w-100" alt="..."> <!-- js target -->
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleControls"
+                                                role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls"
+                                                role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
+                                    <div class="col-12 col-sm-5 overflow-container mg-3" style="height: 44vh;">
+                                        <p id="project-long-description-ij">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Nulla ut nisi pretium, tempor augue
+                                            feugiat, accumsan elit. Donec suscipit massa urna, non eleifend
+                                            libero tristique ut. Aenean
+                                            accumsan est vitae purus maximus facilisis. Curabitur eget ex in
+                                            felis lacinia tristique et
+                                            vitae orci. Nullam sollicitudin maximus risus, ut lacinia dui
+                                            hendrerit eget. Ut porta
+                                            sodales leo, non porttitor turpis posuere in. Fusce semper, augue
+                                            quis vulputate interdum,
+                                            lacus nunc imperdiet nunc, eu vulputate velit orci in quam. Etiam
+                                            consequat purus sit amet
+                                            lectus rutrum, eget interdum odio aliquam. Quisque porta eget mi sit
+                                            amet tempus.
+
+                                            Donec eget feugiat ex. Vestibulum nec maximus arcu. Morbi suscipit
+                                            sollicitudin lectus, et
+                                            varius erat iaculis vel. Pellentesque blandit fringilla orci, ut
+                                            blandit libero ornare quis.
+                                            Sed ut auctor est. Nam fermentum sapien at cursus tincidunt. Quisque
+                                            ac massa eu sapien
+                                            sodales lacinia id et eros. Donec tincidunt euismod nisi a iaculis.
+                                            In aliquet hendrerit dui
+                                            sed pharetra. Nulla efficitur libero nec tristique sodales. Nulla
+                                            semper fermentum velit, a
+                                            pharetra arcu tincidunt quis. Duis vehicula nisi at dictum egestas.
+                                            Proin cursus velit
+                                            libero, ut accumsan erat iaculis et. Sed ultrices id nisi quis
+                                            ultrices. Nullam elementum
+                                            lacus sed quam maximus placerat.
+                                        </p> <!-- js target -->
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <!-- Modal toggles-->
-                            <div class="modal-toggle-container text-light">
-                                <div class="modal-toggle-image-container" data-toggle="modal"
-                                    data-target="#project-modal-1">
-                                    <img class="img-fluid" src="assets/modal-images/project-image-template-light.png"
-                                        style="cursor:pointer;">
-                                    <div class="modal-toggle-image-overlay"></div>
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="mb-2" style="font-size: 1.3rem;"> Project Name </h3>
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-deployed" target="_blank"
-                                            style="text-decoration: underline;">Deployed Site</a>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <img src="assets/icons/github-white.svg" class="mr-1">
-                                        <a class="text-reset" href="#" title="project-repository" target="_blank"
-                                            style="text-decoration: underline;">GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modals -->
-                    <div class="modal fade" id="project-modal-1" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Project Title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="assets/modal-images/project-image-template-dark.png" class="img-fluid">
-                                    <p class="mb-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <a class="btn btn-secondary" href="https://www.csun.edu/career/self-exploration"
-                                        role="button" title="Self Exploration Web Page" target="_blank"><img src=""
-                                            width="20px" style="margin-right:10px;">Launch</a>
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
+                            <div class="modal-footer">
+                                <a class="project-link-ij btn btn-secondary" href="#" role="button" title="Project link"
+                                    target="_blank">Launch</a> <!-- js target -->
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -253,7 +235,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://github.com/edwardreyes29/WeatherApp" class="w-100" title="Check out my GitHub"
+                        <a href="https://github.com/edwardreyes29" class="w-100" title="Check out my GitHub"
                             target="_blank">
                             <img src="assets/icons/github-white.svg" width="25">
                         </a>
