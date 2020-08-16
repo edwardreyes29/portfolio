@@ -21,6 +21,13 @@ footer {
 a {
     text-decoration: none;
 }
+
+.overflow-wrapper {
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto
+}
 /*#### Nav Styles ####*/
 .nav-item:hover {
     text-decoration: underline;
