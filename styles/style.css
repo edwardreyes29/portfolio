@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     position: relative;
+    background-color:#353A3F;
 }
 
 .wrapper {
@@ -72,7 +73,7 @@ a {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.3;
     transition: .5s ease;
     background-color: #353535;
 }
@@ -86,4 +87,8 @@ a {
 
 .overflow-container {
     overflow: auto;
+}
+
+#projects-div > .row {
+    max-height:550px
 }

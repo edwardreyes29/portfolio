@@ -1,12 +1,117 @@
 /* To render page information */
+
+projects = [
+    [ // row 1
+        {
+            name: "Secure Travel App",
+            short_description: "A travel app that advises the user where they should travel based on Coronavirus risk recommendations",
+            long_description:
+                `<h5>Concept</h5>
+                <p>A travel app that advises the user where they should travel based on Coronavirus risk recommendations and provides the user with travel accommodation options.</p>
+                <h5>User Story</h5>
+                <ul>  
+                    <li>View number of confirmed cases</li>
+                    </li>View number of Deaths</li>
+                    </li>View a map display of color-coded areas highlighting hot spots</li>
+                    </li>Display US map with color-coded areas that displays case information.</li>
+                    </li>Button that toggles between US map and World map.</li>
+                    </li>Clickable locations that displays three random hotel locations and risk levels.</li>
+                    </li>Book now feature that links the user to Trip Advisor</li>
+                </ul>
+                <h5>Site information Display</h5>
+                    <ul>
+                        <li>Total confirmed deaths</li>
+                        <li>Total confirmed cases (based on API information provided)</li>
+                        <li>Highlight countries currently blocking travel</li>
+                        <li>We created our own parameters of what constitutes being a safe location to travel to</li>
+                        <li>Hotel information displayed at user’s selected destination</li>
+                    </ul>
+                </h5>`,
+            images: [
+                "../assets/images/project-1/world-cases.png",
+                "../assets/images/project-1/us-cases.png",
+                "../assets/images/project-1/news.png",
+                "../assets/images/project-1/hotel-listings.png"
+            ],
+            links: { deployed: "https://edwardreyes29.github.io/project-1/", github: "https://github.com/edwardreyes29/project-1" }
+        },
+        {
+            name: "Weather App",
+            short_description: "This app allows you to search a location and view weather data such has temperature, cloud conditions, humidity, wind speeds, wind directions, and UV index.",
+            long_description:
+                `<h5>Concept</h5>
+                <p>This app allows you to search a location and view weather data such has temperature, cloud conditions, humidity, wind speeds, wind directions, and UV index. The app will also store you previous searched locations, allowing you to search adn see weather data on that location when clicked again. The app also display weather information from a 5 day forecast, displaying similar results as the current weather data.</p>
+                <h5>User Story</h5>
+                <ul>  
+                    <li>As a traveler</li>
+                    </li>I want to see the weather outlook for multiple cities</li>
+                    </li>So that I can plan a trip accordingly</li>
+                </ul>
+                <h5>Site information Display</h5>
+                    <ul>
+                        <li>Displays Temperature and weather conditions</li>
+                        <li>Display wind speeds, wind directions, UV index, and humidity.</li>
+                    </ul>
+                </h5>`,
+            images: [
+                "../assets/images/WeatherApp/current-weather.png",
+                "../assets/images/WeatherApp/tomorrow-weather.png",
+                "../assets/images/WeatherApp/5-day-forecast.png",
+                "../assets/images/WeatherApp/saved-searches.png",
+                "../assets/images/WeatherApp/mobile-responsive.png"
+            ],
+            links: { deployed: "https://edwardreyes29.github.io/WeatherApp/", github: "https://github.com/edwardreyes29/WeatherApp" }
+        }
+    ],
+    [ // row 2
+        {
+            name: "CSUN: Self-Exploration Page",
+            short_description: "Coming soon",
+            long_description:
+                `<p>Coming soon</p>`,
+            images: [
+                "../assets/images/csun-self-exploration/main-page.png",
+                "../assets/images/csun-self-exploration/interactive-svgs.png",
+                "../assets/images/csun-self-exploration/end-infographic.png",
+                "../assets/images/csun-self-exploration/hover-info.png"
+            ],
+            links: { deployed: "https://www.csun.edu/career/self-exploration", github: "https://github.com/edwardreyes29/self_exploration_page" }
+        },
+        {
+            name: "Calendar App",
+            short_description: "Allows the user to save events for each hour of the day. ",
+            long_description:
+                `<h5>Concept</h5>
+                <p>Allows the user to save events for each hour of the day. Time-blocks are color coded to indicate whether it is in the past (grey), present (red), or future(green). Users can also enter events and save them in the browsers local storage so users can view their events later.</p>
+                <h5>HTML & Moment.js</h5>
+                <p>The app uses moment.js library to work with the date and time. I used it both to display the current day and time in the jumbotron, and also used to to color code time-blocks. All of these were done in a script tag in the index.html file.</p>
+                <h5>CSS & Bootstrap</h5>
+                <p>I only created a @media rule in css to change the text size for the hours. For Bootstrap I used several classes to style the page. I used .container-fluid on he div that surrounds all the time-blocks to make the bootstrap responsive. I also added .col classes that have breakpoints to change their size when the viewport reaches a certain size.</p>
+                <h5>JavaScript</h5>
+                <p>I have two functions and a click assigned to the save button event to save the events. The first function, called initEvents(),initializes the events array with the objects saved in the localStorage. The second function, called renderEvents(), assigns the appropriate textarea elements with the corresponding description. The save button is assigned a click event, and I've added extra code that notifies the user if they either saved and event or not. An event is not save if it contains an empty string and notifies the user.</p>
+                `,
+            images: [
+                "../assets/images/CalendarApp/main-page.png",
+                "../assets/images/CalendarApp/color-coded-time.png",
+                "../assets/images/CalendarApp/responsive.png"
+            ],
+            links: { deployed: "https://edwardreyes29.github.io/CalendarApp/", github: "https://github.com/edwardreyes29/CalendarApp" }
+        }
+    ]        
+];
+
+console.log(projects);
+
 console.log("hello");
 
 const addProjects = () => {
-    for (let i = 0; i < 3; i++) {
+    console.log(projects[0][0]);
+    for (let i = 0; i < projects.length; i++) {
         /* Add row */
-        $("#projects-div").append(`<div id="row-${i+1}" class="row"></div>`);
+        $("#projects-div").append(`<div id="row-${i + 1}" class="row"></div>`);
         /* add two columns per row */
-        for (let j = 0; j < 2; j++) {
+        console.log(projects[i].length)
+        for (let j = 0; j < projects[i].length; j++) {
             var openColDiv;
             var openContainer;
             var openProjectContainer;
@@ -20,44 +125,34 @@ const addProjects = () => {
                 openProjectContainer = `<div class="project-container text-light ml-auto">`
             }
             /* Append columns */
-            $(`#row-${(i+1)}`).append(`${openColDiv}
+            $(`#row-${(i + 1)}`).append(`${openColDiv}
                         ${openContainer}
                             ${openProjectContainer}
                                 <div class="project-image-container">
-                                    <img id="project-image-${i+1}${j+1}" class="img-fluid"
-                                        src="assets/modal-images/project-image-template-light.png"
+                                    <img id="project-image-${i + 1}${j + 1}" class="img-fluid"
+                                        src="${projects[i][j].images[0]}"
                                         style="cursor:pointer;"> <!-- js target -->
-                                        <a class="project-link-${i+1}${j+1}" href="#" target="_blank">
+                                        <a class="project-link-${i + 1}${j + 1}" href="${projects[i][j].links.deployed}" target="_blank">
                                             <div class="project-image-overlay"></div>
                                         </a> <!-- js target -->
                                 </div>
                                 <div class="mt-2">
                                     <div class="d-flex justify-content-between">
-                                        <h3 class="project-name-${i+1}${j+1} mb-2" style="font-size: 1.3rem;"> Project
-                                            Name </h3>
-                                        <!-- js target -->
-                                        <div class="pr-3" data-toggle="modal" data-target="#project-modal-${i+1}${j+1}">
-                                            <!-- js target -->
+                                        <h3 class="project-name-${i + 1}${j + 1} mb-2" style="font-size: 1.3rem;">${projects[i][j].name}</h3> <!-- js target -->
+                                        <div class="pr-3" data-toggle="modal" data-target="#project-modal-${i + 1}${j + 1}"> <!-- js target -->
                                             <img class="img-fluid" src="assets/icons/info-circle-light.svg"
                                                 style="cursor:pointer; width: 18px;">
                                         </div>
                                     </div>
-                                    <p id="project-description-${i+1}${j+1}" class="mb-2 font-weight-light">Lorem ipsum
-                                        dolor sit
-                                        amet, consectetur
-                                        adipiscing elit.
-                                        Vestibulum mi lacus, feugiat nec arcu id, porta malesuada ex.</p>
-                                    <!-- js target -->
+                                    <p id="project-description-${i + 1}${j + 1}" class="mb-2 font-weight-light">${projects[i][j].short_description}</p> <!-- js target -->
                                     <div class="d-flex mb-2">
                                         <img src="assets/icons/arrow-up-circle-white.svg" class="mr-1">
-                                        <a class="project-link-${i+1}${j+1} text-reset" href="#" title="project-deployed"
-                                            target="_blank" style="text-decoration: underline;">Deployed
-                                        Site</a>
-                                        <!-- js target -->
+                                        <a class="project-link-${i + 1}${j + 1} text-reset" href="${projects[i][j].links.deployed}" title="project-deployed"
+                                            target="_blank" style="text-decoration: underline;">Deployed Site</a> <!-- js target -->
                                 </div>
                                 <div class="d-flex mb-2">
                                     <img src="assets/icons/github-white.svg" class="mr-1">
-                                    <a id="project-github-link-${i+1}${j+1}" class="text-reset" href="#"
+                                    <a id="project-github-link-${i + 1}${j + 1}" class="text-reset" href="${projects[i][j].links.github}"
                                         title="project-repository" target="_blank"
                                         style="text-decoration: underline;">GitHub</a> <!-- js target -->
                                 </div>
@@ -68,14 +163,12 @@ const addProjects = () => {
 
             /* Append modals */
             $("#modals-div").append(` 
-                    <div class="modal fade" id="project-modal-${i+1}${j+1}" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <!-- js target -->
+                    <div class="modal fade" id="project-modal-${i + 1}${j + 1}" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- js target -->
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content bg-dark text-light">
                             <div class="modal-header bg-dark">
-                                <h5 class="project-name-${i+1}${j+1}" id="exampleModalLabel">Project Name</h5>
-                                <!-- js target -->
+                                <h3 class="project-name-${i + 1}${j + 1}" id="exampleModalLabel">${projects[i][j].name}</h3> <!-- js target -->
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true" style="color: #ffffff;">&times;</span>
                                 </button>
@@ -84,16 +177,15 @@ const addProjects = () => {
                                 <div class="row">
                                     <div class="col-12 col-sm-7">
                                         <!-- Carousel -->
-                                        <div id="carousel-controls-${i+1}${j+1}" class="carousel slide mb-3"
-                                            data-ride="carousel">
-                                            <div id="carousel-div-${i+1}${j+1}" class="carousel-inner"></div><!-- target js --->
-                                            <a class="carousel-control-prev" href="#carousel-controls-${i+1}${j+1}"
+                                        <div id="carousel-controls-${i + 1}${j + 1}" class="carousel slide mb-3" data-ride="carousel">
+                                            <div id="carousel-div-${i + 1}${j + 1}" class="carousel-inner"></div><!-- target js --->
+                                            <a class="carousel-control-prev" href="#carousel-controls-${i + 1}${j + 1}"
                                                 role="button" data-slide="prev">
                                                 <span class="carousel-control-prev-icon"
                                                     aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                             </a>
-                                            <a class="carousel-control-next" href="#carousel-controls-${i+1}${j+1}"
+                                            <a class="carousel-control-next" href="#carousel-controls-${i + 1}${j + 1}"
                                                 role="button" data-slide="next">
                                                 <span class="carousel-control-next-icon"
                                                     aria-hidden="true"></span>
@@ -101,55 +193,15 @@ const addProjects = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-5 overflow-container mg-3"
-                                        style="height: 44vh;">
-                                        <p id="project-long-description-${i+1}${j+1}">Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Nulla ut nisi pretium, tempor augue
-                                            feugiat, accumsan elit. Donec suscipit massa urna, non eleifend
-                                            libero tristique ut. Aenean
-                                            accumsan est vitae purus maximus facilisis. Curabitur eget ex in
-                                            felis lacinia tristique et
-                                            vitae orci. Nullam sollicitudin maximus risus, ut lacinia dui
-                                            hendrerit eget. Ut porta
-                                            sodales leo, non porttitor turpis posuere in. Fusce semper,
-                                            augue
-                                            quis vulputate interdum,
-                                            lacus nunc imperdiet nunc, eu vulputate velit orci in quam.
-                                            Etiam
-                                            consequat purus sit amet
-                                            lectus rutrum, eget interdum odio aliquam. Quisque porta eget mi
-                                            sit
-                                            amet tempus.
-
-                                            Donec eget feugiat ex. Vestibulum nec maximus arcu. Morbi
-                                            suscipit
-                                            sollicitudin lectus, et
-                                            varius erat iaculis vel. Pellentesque blandit fringilla orci, ut
-                                            blandit libero ornare quis.
-                                            Sed ut auctor est. Nam fermentum sapien at cursus tincidunt.
-                                            Quisque
-                                            ac massa eu sapien
-                                            sodales lacinia id et eros. Donec tincidunt euismod nisi a
-                                            iaculis.
-                                            In aliquet hendrerit dui
-                                            sed pharetra. Nulla efficitur libero nec tristique sodales.
-                                            Nulla
-                                            semper fermentum velit, a
-                                            pharetra arcu tincidunt quis. Duis vehicula nisi at dictum
-                                            egestas.
-                                            Proin cursus velit
-                                            libero, ut accumsan erat iaculis et. Sed ultrices id nisi quis
-                                            ultrices. Nullam elementum
-                                            lacus sed quam maximus placerat.
-                                        </p> <!-- js target -->
+                                    <div class="col-12 col-sm-5 overflow-container mg-3" style="height: 44vh;">
+                                        ${projects[i][j].long_description}
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a class="project-link-${i+1}${j+1} btn btn-secondary" href="#" role="button"
+                                <a class="project-link-${i + 1}${j + 1} btn btn-secondary" href="${projects[i][j].links.deployed}" role="button"
                                     title="Project link" target="_blank">Launch</a> <!-- js target -->
-                                <button type="button" class="btn btn-secondary"
-                                    data-dismiss="modal">Close</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -157,25 +209,20 @@ const addProjects = () => {
             `)
 
             /* Append Carousel images */
-            for (let k = 0; k < 3; k++) {
+            for (let k = 0; k < projects[i][j].images.length; k++) {
                 let carouselClass = `class="carousel-item"`;
-                let image;
+                let image = projects[i][j].images[k];
                 if (k === 0) {
                     carouselClass = `class="carousel-item active"`;
-                    image = "../../assets/modal-images/modal-test.png"
-                } else if (k === 1) {
-                    image = "../../assets/modal-images/WeatherApp-home.png"
-                } else {
-                    image = "../../assets/modal-images/project-image-template-dark.png"
-                }
-                $(`#carousel-div-${i+1}${j+1}`).append(`
-                    <div id="carousel-image-${i+1}${j+1}${k+1}" ${carouselClass}>
+                } 
+                $(`#carousel-div-${i + 1}${j + 1}`).append(`
+                    <div id="carousel-image-${i + 1}${j + 1}${k + 1}" ${carouselClass}>
                         <img src=${image}
                             class="d-block w-100" alt="..."> <!-- js target -->
                     </div>
                 `)
             }
-            
+
         }
     }
 }
