@@ -14,29 +14,36 @@
     <div class="container">
         <div class="wrapper">
             <header class="" role="banner">
-                <nav role="navigation" class="navbar navbar-expand-lg pl-0 pr-0 ml-auto">
-                    <ul class="nav nav-tabs border border-0 ml-sm-auto" id="main-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active text-light" id="home-tab" data-toggle="tab" href="#home"
-                                role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link text-light" id="about-tab" data-toggle="tab" href="#about" role="tab"
-                                aria-controls="about" aria-selected="false">About</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link text-light" id="portfolio-tab" data-toggle="tab" href="#portfolio"
-                                role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">Contact</a>
-                        </li>
-                    </ul>
+                <nav role="navigation" class="navbar navbar-expand-lg p-0">
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-tabs border border-0 mr-auto" id="main-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active text-light pl-1 pl-md-0" id="home-tab" data-toggle="tab" href="#home"
+                                    role="tab" aria-controls="home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link text-light" id="about-tab" data-toggle="tab" href="#about" role="tab"
+                                    aria-controls="about" aria-selected="false">About</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link text-light" id="portfolio-tab" data-toggle="tab" href="#portfolio"
+                                    role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link text-light" id="contact-tab" data-toggle="tab" href="#contact"
+                                    role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
-            <main class="" role="main">
-                <div class="container tab-content" id="main-tab-content">
+            <main role="main">
+                <div class="tab-content" id="main-tab-content">
                     <!-- Home -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="h-100 d-flex">
@@ -89,34 +96,33 @@
                     <!-- Contact -->
                     <div class="tab-pane fade text-light" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="row">
-                            <div class="col-3 mr-2">
+                            <div class="col-12 col-sm-3 mr-2">
                                 <h3>Contact Me</h3>
                                 <p>Please feel free to get in touch, and I will
                                     respond as soon as possible.
                                     If you prefer to contact me directly, send your Email to: reyes.edwardf@gmail.com
                                 </p>
                             </div>
-                            <div class="col-6 pl-2">
+                            <div class="col-12 col-sm-6">
                                 <form>
                                     <div class="form-group">
                                         <label for="nameInput">Name:*</label>
-                                        <input type="text" class="form-control"
-                                            id="nameInput" placeholder="You Name" required>
+                                        <input type="text" class="form-control" id="nameInput" placeholder="You Name"
+                                            required>
                                         <!-- <div class="valid-feedback">
                                             Looks good!
                                         </div> -->
                                     </div>
                                     <div class="form-group">
                                         <label for="emailInput">Email:*</label>
-                                        <input type="email" class="form-control"
-                                            id="emailInput" placeholder="You Email Address">
+                                        <input type="email" class="form-control" id="emailInput"
+                                            placeholder="You Email Address">
                                     </div>
                                     <div class="form-group mb-1">
                                         <label for="exampleFormControlTextarea1">Your Message:* <span
                                                 style="font-size: x-small">(1000 characters)</span></label>
-                                        <textarea class="form-control"
-                                            id="exampleFormControlTextarea1" placeholder="Your Message"
-                                            rows="5"></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Your Message" rows="5"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-outline-light mb-1">Send</button>
                                 </form>
@@ -129,7 +135,8 @@
                 <div class="d-flex align-content-end">
                     <div class="d-flex align-content-center justify-content-between mr-auto">
                         <a href="#" class="mr-1" target="_blank" title="Edward Reyes">
-                            <img id="logo-footer" src="assets/icons/logo-white.svg" alt="Edward Reyes Logo" width="25"></a>
+                            <img id="logo-footer" src="assets/icons/logo-white.svg" alt="Edward Reyes Logo"
+                                width="25"></a>
                         <div id="copy-footer" class="mt-auto mb-auto">
                             <p class="m-0">&copy; 2020</p>
                         </div>

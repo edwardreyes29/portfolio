@@ -81,6 +81,7 @@ function textDark() {
         $("#about-tab").removeClass("text-light").addClass("text-dark");
         $("#portfolio-tab").removeClass("text-light").addClass("text-dark");
         $("#contact-tab").removeClass("text-light").addClass("text-dark");
+        $(".navbar-toggler").removeClass("navbar-dark").addClass("navbar-light")
 }
 
 function textLight() {
@@ -93,4 +94,5 @@ function textLight() {
     $("#about-tab").removeClass("text-dark").addClass("text-light");
     $("#portfolio-tab").removeClass("text-dark").addClass("text-light");
     $("#contact-tab").removeClass("text-dark").addClass("text-light");
+    $(".navbar-toggler").removeClass("navbar-light").addClass("navbar-dark")
 }

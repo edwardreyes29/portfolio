@@ -56,8 +56,11 @@ a {
 }
 
 /*#### Project Styles ####*/
-.project-container {
-    width: 90%;
+.project-container-left {
+    
+}
+.project-container-right {
+    padding-left: 0;
 }
 .portfolio-page-title-container {
     width: 90%;
@@ -93,6 +96,7 @@ a {
 }
 
 /* Color changing styles */
-#home-image, #git-logo-footer, #logo-footer, #copy-footer, #home-tab, #about-tab, #portfolio-tab, #contact-tab  {
+#home-image, #git-logo-footer, #logo-footer, #copy-footer, 
+#home-tab, #about-tab, #portfolio-tab, #contact-tab, .navbar-toggler {
     transition: .3s ease;
 }

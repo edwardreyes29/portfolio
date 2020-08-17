@@ -111,18 +111,16 @@ function addProjects() {
             var openContainer;
             var openProjectContainer;
             if (j === 0) {
-                openColDiv = `<div class="col-12 col-sm-6 pl-0">`;
-                openContainer = `<div class="container">`;
-                openProjectContainer = `<div class="project-container text-light">`;
+                openColDiv = `<div class="container project-container-left text-light col-12 col-sm-6">`;
+                // openContainer = `<div class="container">`;
+                // openProjectContainer = `<div class="project-container text-light">`;
             } else if (j === 1) {
-                openColDiv = `<div class="col-12 col-sm-6 pr-0">`
-                openContainer = `<div class="container pr-0">`;
-                openProjectContainer = `<div class="project-container text-light ml-auto">`
+                openColDiv = `<div class="container project-container-right text-light ml-auto col-12 col-sm-6">`
+                // openContainer = `<div class="container pr-0">`;
+                // openProjectContainer = `<div class="project-container text-light ml-auto">`
             }
             /* Append columns */
             $(`#row-${(i + 1)}`).append(`${openColDiv}
-                        ${openContainer}
-                            ${openProjectContainer}
                                 <div class="project-image-container">
                                     <img id="project-image-${i + 1}${j + 1}" class="img-fluid"
                                         src="${projects[i][j].images[0]}"
@@ -152,8 +150,8 @@ function addProjects() {
                                         style="text-decoration: underline;">GitHub</a> <!-- js target -->
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        
+                    
                 </div>`);
 
             /* Append modals */
