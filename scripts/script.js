@@ -1,4 +1,5 @@
 /* change background and tab colors based on tab clicked */
+textLight();
 var color = "#353A3F";
 $("#home-tab").on("click", () => {
     color = "#353A3F";
