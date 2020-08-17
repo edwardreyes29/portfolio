@@ -75,7 +75,7 @@ function textDark() {
     $("#home-image").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/images/home-dark.svg");
         $("#git-logo-footer").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/icons/github.svg");
         $("#logo-footer").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/icons/edward-reyes-logo-black.svg")
-        $("#copy-footer").css("color", "#000000");
+        $("#copy-footer").removeClass("text-light").addClass("text-dark");
         $("footer").addClass("border-dark");
         $("#home-tab").removeClass("text-light").addClass("text-dark");
         $("#about-tab").removeClass("text-light").addClass("text-dark");
@@ -88,7 +88,7 @@ function textLight() {
     $("#home-image").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/images/home.svg");
     $("#git-logo-footer").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/icons/github-white.svg");
     $("#logo-footer").attr("src","https://raw.githubusercontent.com/edwardreyes29/portfolio/13adab48314db86f75284d64b5d1dc1e76a29cd0/assets/icons/edward-reyes-logo-white.svg")
-    $("#copy-footer").css("color", "#FFFFFF");
+    $("#copy-footer").removeClass("text-dark").addClass("text-light");
     $("footer").removeClass("border-dark");
     $("#home-tab").removeClass("text-dark").addClass("text-light");
     $("#about-tab").removeClass("text-dark").addClass("text-light");

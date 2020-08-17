@@ -100,7 +100,3 @@ a {
 #home-tab, #about-tab, #portfolio-tab, #contact-tab, .navbar-toggler {
     transition: .3s ease;
 }
-
-#copy-footer > p {
-    color: #ffffff;
-}
