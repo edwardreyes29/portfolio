@@ -54,7 +54,7 @@ projects = [
                     </ul>
                 </h5>`,
             images: [
-                "../assets/images/WeatherApp/current-weather.png",
+                "https://github.com/edwardreyes29/portfolio/blob/master/assets/modal-images/WeatherApp-home.png",
                 "../assets/images/WeatherApp/tomorrow-weather.png",
                 "../assets/images/WeatherApp/5-day-forecast.png",
                 "../assets/images/WeatherApp/saved-searches.png",
