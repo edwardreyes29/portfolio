@@ -25,7 +25,7 @@ $("#contact-tab").on("click", () => {
 })
 var colorTime;
 function colorInterval() {
-    colorTime = setInterval(chooseColor, 8000);
+    colorTime = setInterval(chooseColor, 7000);
 }
 colorInterval();
 
