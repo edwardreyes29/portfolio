@@ -37,6 +37,7 @@ var colorCode = 1;
 function chooseColor() {
     if (colorCode === 1) {
         color = "#FEC500";
+        // $("home-image").attr("src",)
         colorCode++;
     } else if (colorCode === 2) {
         color = "#3A97EA";
