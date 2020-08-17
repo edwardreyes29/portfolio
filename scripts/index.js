@@ -28,10 +28,10 @@ projects = [
                     </ul>
                 </h5>`,
             images: [
-                "../assets/images/project-1/world-cases.png",
-                "../assets/images/project-1/us-cases.png",
-                "../assets/images/project-1/news.png",
-                "../assets/images/project-1/hotel-listings.png"
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/project-1/world-cases.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/project-1/us-cases.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/project-1/news.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/project-1/hotel-listings.png"
             ],
             links: { deployed: "https://edwardreyes29.github.io/project-1/", github: "https://github.com/edwardreyes29/project-1" }
         },
@@ -55,10 +55,10 @@ projects = [
                 </h5>`,
             images: [
                 "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/modal-images/WeatherApp-home.png",
-                "../assets/images/WeatherApp/tomorrow-weather.png",
-                "../assets/images/WeatherApp/5-day-forecast.png",
-                "../assets/images/WeatherApp/saved-searches.png",
-                "../assets/images/WeatherApp/mobile-responsive.png"
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/WeatherApp/tomorrow-weather.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/WeatherApp/5-day-forecast.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/WeatherApp/saved-searches.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/WeatherApp/mobile-responsive.png"
             ],
             links: { deployed: "https://edwardreyes29.github.io/WeatherApp/", github: "https://github.com/edwardreyes29/WeatherApp" }
         }
@@ -70,10 +70,10 @@ projects = [
             long_description:
                 `<p>Coming soon</p>`,
             images: [
-                "../assets/images/csun-self-exploration/main-page.png",
-                "../assets/images/csun-self-exploration/interactive-svgs.png",
-                "../assets/images/csun-self-exploration/end-infographic.png",
-                "../assets/images/csun-self-exploration/hover-info.png"
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/csun-self-exploration/main-page.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/csun-self-exploration/interactive-svgs.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/csun-self-exploration/end-infographic.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/csun-self-exploration/hover-info.png"
             ],
             links: { deployed: "https://www.csun.edu/career/self-exploration", github: "https://github.com/edwardreyes29/self_exploration_page" }
         },
@@ -91,9 +91,9 @@ projects = [
                 <p>I have two functions and a click assigned to the save button event to save the events. The first function, called initEvents(),initializes the events array with the objects saved in the localStorage. The second function, called renderEvents(), assigns the appropriate textarea elements with the corresponding description. The save button is assigned a click event, and I've added extra code that notifies the user if they either saved and event or not. An event is not save if it contains an empty string and notifies the user.</p>
                 `,
             images: [
-                "../assets/images/CalendarApp/main-page.png",
-                "../assets/images/CalendarApp/color-coded-time.png",
-                "../assets/images/CalendarApp/responsive.png"
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/CalendarApp/main-page.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/CalendarApp/color-coded-time.png",
+                "https://raw.githubusercontent.com/edwardreyes29/portfolio/master/assets/images/CalendarApp/responsive.png"
             ],
             links: { deployed: "https://edwardreyes29.github.io/CalendarApp/", github: "https://github.com/edwardreyes29/CalendarApp" }
         }
