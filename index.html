@@ -29,7 +29,8 @@
                                 role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-light" href="#">Contact</a>
+                            <a class="nav-link text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -47,21 +48,28 @@
                         <div class="col-8 pl-0">
                             <div class='portfolio-page-title-container'>
                                 <h3 class='text-light'>About me</h3>
-                                <p>My name is Edward Reyes. I am a Software Developer and a recent graduate from California
+                                <p>My name is Edward Reyes. I am a Software Developer and a recent graduate from
+                                    California
                                     State University. While earning my Bachelor’s degree, I have taken Student Assistant
-                                    positions as a Tutor for the Engineering department and then after a Web Developer for the
-                                    CSUN’s Career Center. There I’ve learned many skills required for Web Development. I was
+                                    positions as a Tutor for the Engineering department and then after a Web Developer
+                                    for the
+                                    CSUN’s Career Center. There I’ve learned many skills required for Web Development. I
+                                    was
                                     tasked with creating an interactive webpage where I had to use JavaScript and CSS to
-                                    implement animations and trigger events. I have learned JavaScript along with jQuery,
-                                    Node.js, and ES6 standard. The most valuable skill I’ve learned during my time working for
-                                    CSUN’s Career Center was learning new tools very quickly and applying my knowledge to
-                                    complete a task. Since then I have been improving my frontend web development skills and I
-                                    have used and worked with Bootstrap.js which I have used heavily to build my personal
+                                    implement animations and trigger events. I have learned JavaScript along with
+                                    jQuery,
+                                    Node.js, and ES6 standard. The most valuable skill I’ve learned during my time
+                                    working for
+                                    CSUN’s Career Center was learning new tools very quickly and applying my knowledge
+                                    to
+                                    complete a task. Since then I have been improving my frontend web development skills
+                                    and I
+                                    have used and worked with Bootstrap.js which I have used heavily to build my
+                                    personal
                                     website.
                                 </p>
                             </div>
                         </div>
-                        
                     </div>
                     <!-- Projects -->
                     <div class="tab-pane fade text-light" id="portfolio" role="tabpanel"
@@ -75,11 +83,45 @@
                                         style="text-decoration: underline;">GitHub</a></p>
                             </div>
                         </div>
-
                         <div id="projects-div"></div> <!-- add projects here -->
-
                         <div id="modals-div"></div> <!-- Add modals here -->
-
+                    </div>
+                    <!-- Contact -->
+                    <div class="tab-pane fade text-light" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">
+                            <div class="col-3 mr-2">
+                                <h3>Contact Me</h3>
+                                <p>Please feel free to get in touch, and I will
+                                    respond as soon as possible.
+                                    If you prefer to contact me directly, send your Email to: reyes.edwardf@gmail.com
+                                </p>
+                            </div>
+                            <div class="col-6 pl-2">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nameInput">Name:*</label>
+                                        <input type="text" class="form-control"
+                                            id="nameInput" placeholder="You Name" required>
+                                        <!-- <div class="valid-feedback">
+                                            Looks good!
+                                        </div> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailInput">Email:*</label>
+                                        <input type="email" class="form-control"
+                                            id="emailInput" placeholder="You Email Address">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <label for="exampleFormControlTextarea1">Your Message:* <span
+                                                style="font-size: x-small">(1000 characters)</span></label>
+                                        <textarea class="form-control"
+                                            id="exampleFormControlTextarea1" placeholder="Your Message"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-light mb-1">Send</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -112,6 +154,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 

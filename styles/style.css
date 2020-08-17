@@ -3,6 +3,7 @@ body {
     height: 100%;
     position: relative;
     background-color:#353A3F;
+    transition: .3s ease;
 }
 
 .wrapper {
@@ -34,7 +35,9 @@ a {
 
 #main-tab li a {
     border: 0;
+    /* background-color: #353A3F; */
     background-color: #353A3F;
+    transition: .3s ease;
 }
 #main-tab li a:hover {
     border: 0;

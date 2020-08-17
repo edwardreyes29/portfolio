@@ -199,7 +199,7 @@ const addProjects = () => {
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a class="project-link-${i + 1}${j + 1} btn btn-secondary" href="${projects[i][j].links.deployed}" role="button"
+                                <a class="project-link-${i + 1}${j + 1} btn btn-outline-light" href="${projects[i][j].links.deployed}" role="button"
                                     title="Project link" target="_blank">Launch</a> <!-- js target -->
                                 
                             </div>
