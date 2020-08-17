@@ -18,12 +18,12 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    transition: .3s ease;
 }
 
 a {
     text-decoration: none;
 }
-
 
 /*#### Nav Styles ####*/
 .nav-item .active {
@@ -92,6 +92,7 @@ a {
     overflow: auto;
 }
 
-#projects-div > .row {
-    max-height:550px
+/* Color changing styles */
+#home-image, #git-logo-footer, #logo-footer, #copy-footer, #home-tab, #about-tab, #portfolio-tab, #contact-tab  {
+    transition: .3s ease;
 }

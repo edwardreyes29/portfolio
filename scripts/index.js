@@ -100,27 +100,22 @@ projects = [
     ]        
 ];
 
-console.log(projects);
-
-console.log("hello");
-
 function addProjects() {
     console.log(projects[0][0]);
     for (let i = 0; i < projects.length; i++) {
         /* Add row */
         $("#projects-div").append(`<div id="row-${i + 1}" class="row"></div>`);
         /* add two columns per row */
-        console.log(projects[i].length)
         for (let j = 0; j < projects[i].length; j++) {
             var openColDiv;
             var openContainer;
             var openProjectContainer;
             if (j === 0) {
-                openColDiv = `<div class="col-6 pl-0">`;
+                openColDiv = `<div class="col-12 col-sm-6 pl-0">`;
                 openContainer = `<div class="container">`;
                 openProjectContainer = `<div class="project-container text-light">`;
             } else if (j === 1) {
-                openColDiv = `<div class="col-6 pr-0">`
+                openColDiv = `<div class="col-12 col-sm-6 pr-0">`
                 openContainer = `<div class="container pr-0">`;
                 openProjectContainer = `<div class="project-container text-light ml-auto">`
             }
