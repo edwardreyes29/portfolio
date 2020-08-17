@@ -104,7 +104,7 @@ console.log(projects);
 
 console.log("hello");
 
-const addProjects = () => {
+function addProjects() {
     console.log(projects[0][0]);
     for (let i = 0; i < projects.length; i++) {
         /* Add row */
