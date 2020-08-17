@@ -101,6 +101,6 @@ a {
     transition: .3s ease;
 }
 
-#copy-footer {
+#copy-footer > p {
     color: #ffffff;
 }
