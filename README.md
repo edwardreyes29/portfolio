@@ -26,10 +26,6 @@ I updated my portfolio to have a more simple aesthetic. I've also added more rec
 ### Technologies used:  
   HTML, CSS, Bootstrap, JavaScript, jQuery
 
-## LINK TO DEPLOYED APPLICATION / GITHUB
-
-[GitHub Pages](https://edwardreyes29.github.io/portfolio/)
-
 ## Screen shots
 
 ## Final result
